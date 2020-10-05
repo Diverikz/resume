@@ -58,12 +58,11 @@ p {
 .header.fixed {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.9);
-  padding: 0;
-  border-bottom: 0;
 }
 
 .header.fixed .header__inner {
   border-bottom: 0;
+  padding: 0;
 }
 
 .header__inner {
@@ -80,7 +79,7 @@ p {
 .nav {
   display: flex;
   font-size: 0.9rem;
-  height: 100%;
+  height: auto;
   text-transform: uppercase;
 }
 
@@ -326,7 +325,6 @@ p {
 
 .reviews {
   background: var(--black);
-  /* background: #3d3d49; */
   overflow: hidden;
 }
 
@@ -421,7 +419,6 @@ p {
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
-  /* Если указывать color: var(--white) текст не видно? */
 }
 
 .footer__address {
@@ -532,8 +529,21 @@ p {
 @media (max-width: 995px) {
   .nav {
     display: none;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    flex-direction: column;
+    text-align: right;
+    top: 100%;
   }
 
+  .nav__link {
+    padding: 10px 15px;
+  }
+
+  .nav.show {
+    display: flex;
+  }
   /* Burger */
 
   .burger {

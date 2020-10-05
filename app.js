@@ -1,3 +1,5 @@
+// Header fixed
+
 $(function () {
   let header = $("#header");
   let intro = $("#intro");
@@ -13,4 +15,12 @@ $(function () {
       header.removeClass("fixed");
     }
   });
+});
+
+// Menu mobile
+let nav = $("#nav");
+let navToggle = $("#navToggle");
+
+$(navToggle).on("click", function (event) {
+  nav.toggleClass("show");
 });
