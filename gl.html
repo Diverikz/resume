@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="resume">
-	<title>Resume</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="resume" />
+    <title>Resume</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
 
-<body>
-
-<!-- Sprite -->
-<svg style="display: none;">
-
-	<symbol id="vkontakte" viewBox="0 0 97.75 97.75" >
-		<g>
-			<path d="M48.875,0C21.883,0,0,21.882,0,48.875S21.883,97.75,48.875,97.75S97.75,75.868,97.75,48.875S75.867,0,48.875,0z
+  <body>
+    <!-- Sprite -->
+    <svg style="display: none">
+      <symbol id="vkontakte" viewBox="0 0 97.75 97.75">
+        <g>
+          <path
+            d="M48.875,0C21.883,0,0,21.882,0,48.875S21.883,97.75,48.875,97.75S97.75,75.868,97.75,48.875S75.867,0,48.875,0z
 				 M73.667,54.161c2.278,2.225,4.688,4.319,6.733,6.774c0.906,1.086,1.76,2.209,2.41,3.472c0.928,1.801,0.09,3.776-1.522,3.883
 				l-10.013-0.002c-2.586,0.214-4.644-0.829-6.379-2.597c-1.385-1.409-2.67-2.914-4.004-4.371c-0.545-0.598-1.119-1.161-1.803-1.604
 				c-1.365-0.888-2.551-0.616-3.333,0.81c-0.797,1.451-0.979,3.059-1.055,4.674c-0.109,2.361-0.821,2.978-3.19,3.089
@@ -29,234 +31,296 @@
 				l0.01,12.572c-0.021,0.695,0.349,2.755,1.597,3.21c1,0.33,1.66-0.472,2.258-1.105c2.713-2.879,4.646-6.277,6.377-9.794
 				c0.764-1.551,1.423-3.156,2.063-4.764c0.476-1.189,1.216-1.774,2.558-1.754l10.894,0.013c0.321,0,0.647,0.003,0.965,0.058
 				c1.836,0.314,2.339,1.104,1.771,2.895c-0.894,2.814-2.631,5.158-4.329,7.508c-1.82,2.516-3.761,4.944-5.563,7.471
-				C71.48,50.992,71.611,52.155,73.667,54.161z"/>
-		</g>
-	</symbol>
+				C71.48,50.992,71.611,52.155,73.667,54.161z"
+          />
+        </g>
+      </symbol>
 
-	<symbol id="instagram" viewBox="0 0 512 512">
-		<path d="m370.59375 169.304688c-2.355469-6.382813-6.113281-12.160157-10.996094-16.902344-4.742187-4.882813-10.515625-8.640625-16.902344-10.996094-5.179687-2.011719-12.960937-4.40625-27.292968-5.058594-15.503906-.707031-20.152344-.859375-59.402344-.859375-39.253906 0-43.902344.148438-59.402344.855469-14.332031.65625-22.117187 3.050781-27.292968 5.0625-6.386719 2.355469-12.164063 6.113281-16.902344 10.996094-4.882813 4.742187-8.640625 10.515625-11 16.902344-2.011719 5.179687-4.40625 12.964843-5.058594 27.296874-.707031 15.5-.859375 20.148438-.859375 59.402344 0 39.25.152344 43.898438.859375 59.402344.652344 14.332031 3.046875 22.113281 5.058594 27.292969 2.359375 6.386719 6.113281 12.160156 10.996094 16.902343 4.742187 4.882813 10.515624 8.640626 16.902343 10.996094 5.179688 2.015625 12.964844 4.410156 27.296875 5.0625 15.5.707032 20.144532.855469 59.398438.855469 39.257812 0 43.90625-.148437 59.402344-.855469 14.332031-.652344 22.117187-3.046875 27.296874-5.0625 12.820313-4.945312 22.953126-15.078125 27.898438-27.898437 2.011719-5.179688 4.40625-12.960938 5.0625-27.292969.707031-15.503906.855469-20.152344.855469-59.402344 0-39.253906-.148438-43.902344-.855469-59.402344-.652344-14.332031-3.046875-22.117187-5.0625-27.296874zm-114.59375 162.179687c-41.691406 0-75.488281-33.792969-75.488281-75.484375s33.796875-75.484375 75.488281-75.484375c41.6875 0 75.484375 33.792969 75.484375 75.484375s-33.796875 75.484375-75.484375 75.484375zm78.46875-136.3125c-9.742188 0-17.640625-7.898437-17.640625-17.640625s7.898437-17.640625 17.640625-17.640625 17.640625 7.898437 17.640625 17.640625c-.003906 9.742188-7.898437 17.640625-17.640625 17.640625zm0 0"/><path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm146.113281 316.605469c-.710937 15.648437-3.199219 26.332031-6.832031 35.683593-7.636719 19.746094-23.246094 35.355469-42.992188 42.992188-9.347656 3.632812-20.035156 6.117188-35.679687 6.832031-15.675781.714844-20.683594.886719-60.605469.886719-39.925781 0-44.929687-.171875-60.609375-.886719-15.644531-.714843-26.332031-3.199219-35.679687-6.832031-9.8125-3.691406-18.695313-9.476562-26.039063-16.957031-7.476562-7.339844-13.261719-16.226563-16.953125-26.035157-3.632812-9.347656-6.121094-20.035156-6.832031-35.679687-.722656-15.679687-.890625-20.6875-.890625-60.609375s.167969-44.929688.886719-60.605469c.710937-15.648437 3.195312-26.332031 6.828125-35.683593 3.691406-9.808594 9.480468-18.695313 16.960937-26.035157 7.339844-7.480469 16.226563-13.265625 26.035157-16.957031 9.351562-3.632812 20.035156-6.117188 35.683593-6.832031 15.675781-.714844 20.683594-.886719 60.605469-.886719s44.929688.171875 60.605469.890625c15.648437.710937 26.332031 3.195313 35.683593 6.824219 9.808594 3.691406 18.695313 9.480468 26.039063 16.960937 7.476563 7.34375 13.265625 16.226563 16.953125 26.035157 3.636719 9.351562 6.121094 20.035156 6.835938 35.683593.714843 15.675781.882812 20.683594.882812 60.605469s-.167969 44.929688-.886719 60.605469zm0 0"/>
-	</symbol>
+      <symbol id="instagram" viewBox="0 0 512 512">
+        <path
+          d="m370.59375 169.304688c-2.355469-6.382813-6.113281-12.160157-10.996094-16.902344-4.742187-4.882813-10.515625-8.640625-16.902344-10.996094-5.179687-2.011719-12.960937-4.40625-27.292968-5.058594-15.503906-.707031-20.152344-.859375-59.402344-.859375-39.253906 0-43.902344.148438-59.402344.855469-14.332031.65625-22.117187 3.050781-27.292968 5.0625-6.386719 2.355469-12.164063 6.113281-16.902344 10.996094-4.882813 4.742187-8.640625 10.515625-11 16.902344-2.011719 5.179687-4.40625 12.964843-5.058594 27.296874-.707031 15.5-.859375 20.148438-.859375 59.402344 0 39.25.152344 43.898438.859375 59.402344.652344 14.332031 3.046875 22.113281 5.058594 27.292969 2.359375 6.386719 6.113281 12.160156 10.996094 16.902343 4.742187 4.882813 10.515624 8.640626 16.902343 10.996094 5.179688 2.015625 12.964844 4.410156 27.296875 5.0625 15.5.707032 20.144532.855469 59.398438.855469 39.257812 0 43.90625-.148437 59.402344-.855469 14.332031-.652344 22.117187-3.046875 27.296874-5.0625 12.820313-4.945312 22.953126-15.078125 27.898438-27.898437 2.011719-5.179688 4.40625-12.960938 5.0625-27.292969.707031-15.503906.855469-20.152344.855469-59.402344 0-39.253906-.148438-43.902344-.855469-59.402344-.652344-14.332031-3.046875-22.117187-5.0625-27.296874zm-114.59375 162.179687c-41.691406 0-75.488281-33.792969-75.488281-75.484375s33.796875-75.484375 75.488281-75.484375c41.6875 0 75.484375 33.792969 75.484375 75.484375s-33.796875 75.484375-75.484375 75.484375zm78.46875-136.3125c-9.742188 0-17.640625-7.898437-17.640625-17.640625s7.898437-17.640625 17.640625-17.640625 17.640625 7.898437 17.640625 17.640625c-.003906 9.742188-7.898437 17.640625-17.640625 17.640625zm0 0"
+        />
+        <path
+          d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm146.113281 316.605469c-.710937 15.648437-3.199219 26.332031-6.832031 35.683593-7.636719 19.746094-23.246094 35.355469-42.992188 42.992188-9.347656 3.632812-20.035156 6.117188-35.679687 6.832031-15.675781.714844-20.683594.886719-60.605469.886719-39.925781 0-44.929687-.171875-60.609375-.886719-15.644531-.714843-26.332031-3.199219-35.679687-6.832031-9.8125-3.691406-18.695313-9.476562-26.039063-16.957031-7.476562-7.339844-13.261719-16.226563-16.953125-26.035157-3.632812-9.347656-6.121094-20.035156-6.832031-35.679687-.722656-15.679687-.890625-20.6875-.890625-60.609375s.167969-44.929688.886719-60.605469c.710937-15.648437 3.195312-26.332031 6.828125-35.683593 3.691406-9.808594 9.480468-18.695313 16.960937-26.035157 7.339844-7.480469 16.226563-13.265625 26.035157-16.957031 9.351562-3.632812 20.035156-6.117188 35.683593-6.832031 15.675781-.714844 20.683594-.886719 60.605469-.886719s44.929688.171875 60.605469.890625c15.648437.710937 26.332031 3.195313 35.683593 6.824219 9.808594 3.691406 18.695313 9.480468 26.039063 16.960937 7.476563 7.34375 13.265625 16.226563 16.953125 26.035157 3.636719 9.351562 6.121094 20.035156 6.835938 35.683593.714843 15.675781.882812 20.683594.882812 60.605469s-.167969 44.929688-.886719 60.605469zm0 0"
+        />
+      </symbol>
 
-	<symbol id="telegram" viewBox="0 0 24 24">
-		<path d="m12 24c6.629 0 12-5.371 12-12s-5.371-12-12-12-12 5.371-12 12 5.371 12 12 12zm-6.509-12.26 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z"/>
-	</symbol>
+      <symbol id="telegram" viewBox="0 0 24 24">
+        <path
+          d="m12 24c6.629 0 12-5.371 12-12s-5.371-12-12-12-12 5.371-12 12 5.371 12 12 12zm-6.509-12.26 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z"
+        />
+      </symbol>
 
-	<symbol id="viber" viewBox="0 0 96 96">
-		<path d="M48,0A48,48,0,1,0,96,48,48,48,0,0,0,48,0Zm2.71,25.64c10.69.33,19.93,10,19.8,20.37a4.15,4.15,0,0,0,.05.79c0,.85-.05,1.73-1.23,1.7-1.34,0-1.15-1.32-1.23-2.33V45.9c-1.43-11-6.55-16.21-17.71-17.9-.93-.11-2.33.05-2.3-1.13C48.22,25.09,49.86,25.78,50.71,25.64ZM65,45.49a.86.86,0,0,1-.85.88c-1.21.22-1.4-.49-1.48-1.29a5.23,5.23,0,0,0-.08-.93C61.41,37.46,59,35,52.14,33.48c-1-.22-2.58-.11-2.3-1.62s1.65-1,2.74-.85c6.85.85,12.48,6.69,12.45,13.13C65,44.53,65.05,45.08,65,45.49Zm-5.7-.88a1.31,1.31,0,0,1-.6.16,1.07,1.07,0,0,1-.93-.36,1.9,1.9,0,0,1-.33-.93,4.94,4.94,0,0,0-4.61-4.8c-.85-.14-1.7-.44-1.29-1.53.27-.77,1-.85,1.7-.85,3-.08,6.61,3.51,6.55,6.61A1.86,1.86,0,0,1,59.27,44.61Zm11.38,19.3c-1.18,3.24-5.24,6.55-8.72,6.5a12.59,12.59,0,0,1-2.33-.63C47.15,64.55,37.5,56.54,30.94,45.57a59,59,0,0,1-4-8c-2.11-5.07.08-9.35,5.43-11.13a4.53,4.53,0,0,1,2.82,0c2.3.85,8.06,8.61,8.17,10.94.08,1.78-1.12,2.74-2.36,3.54A3.77,3.77,0,0,0,39,44.39a6.35,6.35,0,0,0,.58,2.19,20.55,20.55,0,0,0,11,10.5c1.78.8,3.51.71,4.74-1.1,2.17-3.21,4.85-3,7.79-1.07,1.43,1,3,2,4.36,3.1C69.39,59.56,71.8,60.76,70.65,63.91Z"/>
-	</symbol>
+      <symbol id="viber" viewBox="0 0 96 96">
+        <path
+          d="M48,0A48,48,0,1,0,96,48,48,48,0,0,0,48,0Zm2.71,25.64c10.69.33,19.93,10,19.8,20.37a4.15,4.15,0,0,0,.05.79c0,.85-.05,1.73-1.23,1.7-1.34,0-1.15-1.32-1.23-2.33V45.9c-1.43-11-6.55-16.21-17.71-17.9-.93-.11-2.33.05-2.3-1.13C48.22,25.09,49.86,25.78,50.71,25.64ZM65,45.49a.86.86,0,0,1-.85.88c-1.21.22-1.4-.49-1.48-1.29a5.23,5.23,0,0,0-.08-.93C61.41,37.46,59,35,52.14,33.48c-1-.22-2.58-.11-2.3-1.62s1.65-1,2.74-.85c6.85.85,12.48,6.69,12.45,13.13C65,44.53,65.05,45.08,65,45.49Zm-5.7-.88a1.31,1.31,0,0,1-.6.16,1.07,1.07,0,0,1-.93-.36,1.9,1.9,0,0,1-.33-.93,4.94,4.94,0,0,0-4.61-4.8c-.85-.14-1.7-.44-1.29-1.53.27-.77,1-.85,1.7-.85,3-.08,6.61,3.51,6.55,6.61A1.86,1.86,0,0,1,59.27,44.61Zm11.38,19.3c-1.18,3.24-5.24,6.55-8.72,6.5a12.59,12.59,0,0,1-2.33-.63C47.15,64.55,37.5,56.54,30.94,45.57a59,59,0,0,1-4-8c-2.11-5.07.08-9.35,5.43-11.13a4.53,4.53,0,0,1,2.82,0c2.3.85,8.06,8.61,8.17,10.94.08,1.78-1.12,2.74-2.36,3.54A3.77,3.77,0,0,0,39,44.39a6.35,6.35,0,0,0,.58,2.19,20.55,20.55,0,0,0,11,10.5c1.78.8,3.51.71,4.74-1.1,2.17-3.21,4.85-3,7.79-1.07,1.43,1,3,2,4.36,3.1C69.39,59.56,71.8,60.76,70.65,63.91Z"
+        />
+      </symbol>
+    </svg>
 
-</svg>
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="nav">
+            <a class="nav__link" href="#">work</a>
+            <a class="nav__link" href="#">home</a>
+            <a class="nav__link" href="#">about</a>
+            <a class="nav__link" href="#">lolo</a>
+          </div>
 
-<header class="header" id="header">
-	<div class="container">
-		<div class="header__inner">
-			<div class="nav">
-				<a class="nav__link" href="#">work</a>
-				<a class="nav__link" href="#">home</a>
-				<a class="nav__link" href="#">about</a>
-				<a class="nav__link" href="#">lolo</a>
-			</div>
-		
-			<button class="burger" type="button">
-                <span class="burger__item">Menu</span>
-            </button>
+          <button class="burger" type="button">
+            <span class="burger__item">Menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
 
-		</div>
-	</div>		
-</header>
+    <div class="intro" id="intro">
+      <div class="container">
+        <div class="intro__inner">
+          <div class="intro__content">
+            <div class="intro__title">Meshkauskas Eividas</div>
 
-<div class="intro" id="intro">
-	<div class="container">
-		<div class="intro__inner">
-			<div class="intro__content">
-				<div class="intro__title">Meshkauskas Eividas</div>
+            <div class="social">
+              <a
+                class="social__link"
+                href="https://vk.com/good_boy_eividas"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg class="social__icon">
+                  <use xlink:href="#vkontakte"></use>
+                </svg>
+              </a>
+              <a
+                class="social__link"
+                href="https://www.instagram.com/m_vidas/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg class="social__icon">
+                  <use xlink:href="#instagram"></use>
+                </svg>
+              </a>
+              <a
+                class="social__link"
+                href="#"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg class="social__icon">
+                  <use xlink:href="#telegram"></use>
+                </svg>
+              </a>
+              <a
+                class="social__link"
+                href="https://vk.com/bib_bob"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg class="social__icon">
+                  <use xlink:href="#viber"></use>
+                </svg>
+              </a>
+            </div>
 
-			<div class="social">
-				
-				
-				<a class="social__link" href="https://vk.com/good_boy_eividas" rel="noopener noreferrer" target="_blank">
-					<svg class="social__icon">
-						<use xlink:href="#vkontakte"></use>
-					</svg>
-				</a>
-				<a class="social__link" href="https://www.instagram.com/m_vidas/" rel="noopener noreferrer" target="_blank">
-					<svg class="social__icon">
-						<use xlink:href="#instagram"></use>
-					</svg>
-				</a>
-				<a class="social__link" href="#" rel="noopener noreferrer" target="_blank">
-					<svg class="social__icon">
-						<use xlink:href="#telegram"></use>
-					</svg>
-				</a>
-				<a class="social__link" href="https://vk.com/bib_bob" rel="noopener noreferrer" target="_blank">
-					<svg class="social__icon">
-						<use xlink:href="#viber"></use>
-					</svg>
-				</a>
-				
-			</div>
+            <button class="btn" type="button">See my ressume</button>
+          </div>
 
-			<button class="btn" type="button">See my ressume</button>
+          <div class="intro__photo">
+            <img class="intro__img" src="img/e52tW0TRu_A.png" alt="My photo" />
+          </div>
+        </div>
+      </div>
+      <!-- container-->
+    </div>
+    <!-- Intro-->
 
-		</div>
+    <div class="works">
+      <div class="container">
+        <h1 class="text__center">My works</h1>
 
-			<div class="intro__photo">
-				<img class="intro__img" src="img/e52tW0TRu_A.png" alt="My photo">
-			</div>
+        <div class="portfolio">
+          <div class="work">
+            <img
+              class="work__photo"
+              alt="logo landing"
+              src="img/landing_logo.jpg"
+            />
+            <div class="work__content">
+              <div class="work__cat">category:webside</div>
+              <div class="work__title">Landing page</div>
+            </div>
+          </div>
 
-		</div>	
-	</div> <!-- container-->
-</div><!-- Intro-->
+          <div class="work">
+            <img
+              class="work__photo"
+              alt="logo landing"
+              src="img/landing_logo.jpg"
+            />
+            <div class="work__content">
+              <div class="work__cat">category:webside</div>
+              <div class="work__title">Landing page</div>
+            </div>
+          </div>
 
-<div class="works">
-	<div class="container">
-		<h1 class="text__center">My works</h1>
-		
-		<div class="portfolio">
-			<div class="work" >
-				<img class="work__photo" alt="logo landing"  src="img/landing_logo.jpg">
-				<div class="work__content">
-					<div class="work__cat">category:webside</div>
-					<div class="work__title">Landing page</div>
-				</div>
-			</div>
+          <div class="work">
+            <img
+              class="work__photo"
+              alt="logo landing"
+              src="img/landing_logo.jpg"
+            />
+            <div class="work__content">
+              <div class="work__cat">category:webside</div>
+              <div class="work__title">Landing page</div>
+            </div>
+          </div>
+        </div>
+        <!--Portfolio-->
+      </div>
+      <!--Container-->
+    </div>
+    <!--Works-->
 
-			<div class="work" >
-				<img class="work__photo" alt="logo landing" src="img/landing_logo.jpg">
-				<div class="work__content">
-					<div class="work__cat">category:webside</div>
-					<div class="work__title">Landing page</div>
-				</div>
-			</div>
+    <div class="about">
+      <div class="about__item">
+        <img class="about__photo" src="img/about2.jpg" alt="Mountain" />
+        <div class="about__content">
+          <div class="about__title">About me</div>
+          <div class="about__text">Information about me</div>
+        </div>
+      </div>
 
-			<div class="work" >
-				<img class="work__photo" alt="logo landing"  src="img/landing_logo.jpg">
-				<div class="work__content">
-					<div class="work__cat">category:webside</div>
-					<div class="work__title">Landing page</div>
-				</div>
-			</div>
+      <div class="about__item">
+        <img class="about__photo" src="img/about1.jpg" alt="Mountain" />
+        <div class="about__content">
+          <div class="about__title">About me</div>
+          <div class="about__text">Information about me</div>
+        </div>
+      </div>
 
-		</div><!--Portfolio-->
-	</div><!--Container-->	
-</div> <!--Works-->
+      <div class="about__item">
+        <img class="about__photo" src="img/about3.jpg" alt="Mountain" />
+        <div class="about__content">
+          <div class="about__title">About me</div>
+          <div class="about__text">Information about me</div>
+        </div>
+      </div>
 
-<div class="about">
-	<div class="about__item">
-		<img class="about__photo" src="img/about2.jpg" alt="Mountain">
-		<div class="about__content">
-			<div class="about__title">About me</div>
-			<div class="about__text">Information about me</div>
-		</div>
-	</div>
+      <div class="about__item">
+        <img class="about__photo" src="img/about4.jpg" alt="Mountain" />
+        <div class="about__content">
+          <div class="about__title">About me</div>
+          <div class="about__text">Information about me</div>
+        </div>
+      </div>
+    </div>
+    <!--About-->
 
-	<div class="about__item">
-		<img class="about__photo" src="img/about1.jpg" alt="Mountain">
-		<div class="about__content">
-			<div class="about__title">About me</div>
-			<div class="about__text">Information about me</div>
-		</div>
-	</div>
+    <div class="reviews">
+      <div class="container">
+        <div class="reviews__inner">
+          <div class="reviews__photo">
+            <img class="reviews__img" src="img/rev1.jpg" alt="My photo 2" />
+          </div>
+          <div class="reviews__content">
+            <div class="reviews__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              consequat posuere suscipit. Mauris sagittis rutrum rutrum. Aliquam
+              euismod dui vel egestas mollis. Donec lacinia ut mi at rutrum.
+              Etiam non metus bibendum, sagittis risus vel, ornare nisi. Fusce
+              vitae sem mauris. Morbi mattis turpis lacus, non varius elit
+              feugiat eget.
+            </div>
+            <div class="reviews__author">Johnny Sins</div>
+          </div>
+        </div>
+      </div>
+      <!--container -->
+    </div>
+    <!--Reviews-->
 
-	<div class="about__item">
-		<img class="about__photo" src="img/about3.jpg" alt="Mountain">
-		<div class="about__content">
-			<div class="about__title">About me</div>
-			<div class="about__text">Information about me</div>
-		</div>
-	</div>
+    <div class="resume">
+      <div class="container">
+        <h2 class="resume__title">Title of resume</h2>
+        <p class="resume__text">Text are u readdy to work with me</p>
 
-	<div class="about__item">
-		<img class="about__photo" src="img/about4.jpg" alt="Mountain">
-		<div class="about__content">
-			<div class="about__title">About me</div>
-			<div class="about__text">Information about me</div>
-		</div>
-	</div>
+        <button class="btn btn--long" type="button">See my ressume</button>
+      </div>
+    </div>
+    <!--Resume-->
 
-</div> <!--About-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__block">
+            <h3 class="footer__title">Location</h3>
+            <address class="footer__address">
+              <div>Saint Pitersburg</div>
+              <div>Dalnevostochnii prospect</div>
+            </address>
+          </div>
 
-<div class="reviews">
-	<div class="container">
-		
-		<div class="reviews__inner">
-			<div class="reviews__photo">
-				<img class="reviews__img" src="img/rev1.jpg" alt="My photo 2">
-			</div>
-			<div class="reviews__content">
-				<div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat posuere suscipit. Mauris sagittis rutrum rutrum. Aliquam euismod dui vel egestas mollis. Donec lacinia ut mi at rutrum. Etiam non metus bibendum, sagittis risus vel, ornare nisi. Fusce vitae sem mauris. Morbi mattis turpis lacus, non varius elit feugiat eget.</div>
-				<div class="reviews__author">Johnny Sins</div>
-			</div>
-		</div>
-	
-	</div><!--container -->
-</div>	<!--Reviews-->
+          <div class="footer__block">
+            <h4 class="footer__title">From Lt this love</h4>
+            <div class="social social--footer">
+              <a
+                class="social__link"
+                href="https://vk.com/good_boy_eividas"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg class="social__icon">
+                  <use xlink:href="#vkontakte"></use>
+                </svg>
+              </a>
+              <a
+                class="social__link"
+                href="https://www.instagram.com/m_vidas/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg class="social__icon">
+                  <use xlink:href="#instagram"></use>
+                </svg>
+              </a>
+              <a
+                class="social__link"
+                href="https://vk.com/bib_bob"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg class="social__icon">
+                  <use xlink:href="#telegram"></use>
+                </svg>
+              </a>
+              <a
+                class="social__link"
+                href="https://vk.com/bib_bob"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg class="social__icon">
+                  <use xlink:href="#viber"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
 
-<div class="resume">
-	<div class="container">
-		<h2 class="resume__title">Title of resume</h2>
-		<div class="resume__text">
-			<p>Text are u readdy to work with me</p>
-		</div>
-		<button class="btn btn--long"  type="button">See my ressume</button>
-	</div>
-</div><!--Resume-->
+          <div class="footer__block">
+            <div class="footer__copyright">
+              <h5>Meshkauskas Eividas</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Footer-inner -->
+      </div>
+      <!--Container -->
+    </footer>
 
-<footer class="footer">
-	<div class="container">
-		
-		<div class="footer__inner">
-			<div class="footer__block">
-				<h3 class="footer__title">Location</h3>
-				<address class="footer__address">
-					<div>Saint Pitersburg</div>
-					<div>Dalnevostochnii prospect</div>
-				</address>
-			</div>
+    <!-- Javasript -->
 
-			<div class="footer__block">
-				<h4 class="footer__title">From Lt this love</h4>
-				<div class="social social--footer">
-				
-					<a class="social__link" href="https://vk.com/good_boy_eividas" rel="noopener noreferrer" target="_blank">
-						<svg class="social__icon">
-							<use xlink:href="#vkontakte"></use>
-						</svg>
-					</a>
-					<a class="social__link" href="https://www.instagram.com/m_vidas/" rel="noopener noreferrer" target="_blank">
-						<svg class="social__icon">
-							<use xlink:href="#instagram"></use>
-						</svg>
-					</a>
-					<a class="social__link" href="https://vk.com/bib_bob" rel="noopener noreferrer" target="_blank">
-						<svg class="social__icon">
-							<use xlink:href="#telegram"></use>
-						</svg>
-					</a>
-					<a class="social__link" href="https://vk.com/bib_bob" rel="noopener noreferrer" target="_blank">
-						<svg class="social__icon">
-							<use xlink:href="#viber"></use>
-						</svg>
-					</a>
-					
-				</div>
-			</div>
-			
-			<div class="footer__block">
-				<div class="footer__copyright">
-					&copy; 2020 - Meshkauskas Eividas &#9829
-				</div>
-			</div>
-
-		</div><!-- Footer-inner -->
-	
-	</div><!--Container -->
-</footer>
-
-<!-- Javasript -->
-
-<script src="app.js"></script>
-
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
